@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate NTT</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!----------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <!------------header start--------------------------------------->
+    <header class="header">
+        <nav class="navbar nav1">
+            <section class="flex">
+                <a href="index.html" class="logo"> <img src="images/favicon.png" alt=""> Real Estate</a>
+
+                <ul>
+                    <li><a href="#">Đăng Loại Tài Sản <i class="fas fa-paper-plane"></i></a></li>
+                </ul>
+            </section>
+        </nav>
+        <!---->
+        <nav class="navbar nav2">
+            <section class="flex">
+                <div id="menu-btn" class="fas fa-bars"></div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Mua <i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="#">Nhà</a></li>
+                                <li><a href="#">Căn Hộ</a></li>
+                                <li><a href="#">Danh Sách</a></li>
+                                <li><a href="#">Tình Trạng</a></li>
+                                <li><a href="#">Nội Thất</a></li>
+                            </ul>
+                        </li>
+                        <!---->
+                        <li><a href="#">Bán <i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="#">Đăng Loại tài sản</a></li>
+                                <li><a href="#">Bảng Điều Khiển</a></li>
+                            </ul>
+                        </li>
+                        <!---->
+                        <li><a href="#">Thuê <i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="#">Nhà</a></li>
+                                <li><a href="#">Căn Hộ</a></li>
+                                <li><a href="#">Danh Sách</a></li>
+                            </ul>
+                        </li>
+                        <!---->
+                        <li><a href="#">Trợ Giúp<i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="about.html">Về Chúng Tôi</a></li>
+                                <li><a href="contact.html">Liên Hệ Với Chúng Tôi</a></li>
+                                <li><a href="contact.html#faq">FAQ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!---->
+                <ul>
+                   <li><a href="#">Sao Lưu <i class="far fa-heart"></i></a></li> 
+                   <li><a href="#">Tài Khoản<i class="fas fa-angle-down"></i> </a>
+                     <ul>
+                        <li><a href="login.html">Đăng Nhập</a></li>
+                        <li><a href="register.html">Đăng Ký</a></li>
+                     </ul>
+                   </li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+    <!----------header end---------------------------------------->
+
+
+    <!-----------------home start--------------------------------------->
+
+    <div class="home">
+        <section class="center">
+            <form action="search.html" method="post">
+                <h3>Tìm Kiếm Ngôi Nhà Phụ Hợp Nhất</h3>
+                <div class="box">
+                    <p>Nhập Vị Trí <span>*</span></p>
+                    <input type="text" name="location" required maxlength="50" placeholder="nhập địa điểm" class="input">
+                </div>
+                <!---->
+                <div class="flex">
+                    <div class="box">
+                        <p>Loại Tài Sản <span>*</span></p>
+                        <select name="type" class="input">
+                            <option value="house">Nhà</option>
+                            <option value="flat">Căn Hộ</option>
+                            <option value="shop">Chung Cư</option>
+                        </select>
+                    </div>
+                    <!---->
+                    <div class="box">
+                        <p>Đất BHK? <span>*</span></p>
+                        <select name="bhk" required class="input">
+                            <option value="1">1 BHK</option>
+                            <option value="2">2 BHK</option>
+                            <option value="3">3 BHK</option>
+                            <option value="4">4 BHK</option>
+                            <option value="5">5 BHK</option>
+                            <option value="6">6 BHK</option>
+                            <option value="7">7 BHK</option>
+                            <option value="8">8 BHK</option>
+                            <option value="9">9 BHK</option>
+                            
+                        </select>
+                    </div>
+                    <!---->
+                    <div class="box">
+                        <p>Ngân Sách Tối Thiểu <span>*</span></p>
+                        <select name="minimum" required class="input">
+                            <option value="50,00,000">300.000.000 vnđ</option>
+                            <option value="15,000,0000">350.000.000 vnđ</option>
+                            <option value="3,000,0000">400.000.000 vnđ</option>
+                            <option value="5,000,0000">450.000.000 vnđ</option>
+                            <option value="8,000,0000">500.000.000 vnđ</option>
+                            <option value="12,000,000">550.000.000 vnđ</option>
+                            <option value="16,000,000">600.000.000 vnđ</option>
+                            <option value="22,000,000">650.000.000 vnđ</option>
+                            <option value="30,000,000">700.000.000 vnđ</option>
+                            <option value="50,000,000">750.000.000 vnđ</option>
+                        </select>
+                    </div>
+                    <!---->
+                    <div class="box">
+                        <p>Ngân Sách Tối Đa <span>*</span></p>
+                        <select name="maximum" required class="input">
+                            <option value="50,00,000">1 tỷ vnđ</option>
+                            <option value="15,000,000">1.5 tỷ vnđ</option>
+                            <option value="3,000,0000">3 tỷ vnđ</option>
+                            <option value="5,000,0000">3.5 tỷ vnđ </option>
+                            <option value="8,000,0000">4 tỷ vnđ</option>
+                            <option value="12,000,000">4.5 tỷ vnđ</option>
+                            <option value="16,000,000">5 tỷ vnđ</option>
+                            <option value="22,000,000">5.5 tỷ vnđ</option>
+                            <option value="30,000,000">6 tỷ vnđ</option>
+                            <option value="50,000,000">6.5 tỷ vnđ</option>
+                        </select>
+                    </div>
+                </div>
+                <a href="search.html" class="btn">Tìm kiếm tài sản</a>
+            </form>
+        </section>
+    </div>
+    <!-----------------home end--------------------------------------->
+
+    <!--------------service start------------------------------->
+    <section class="services">
+        <h1 class="heading">Dịch Vụ Của Chúng Tôi</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/i1.png" width="150" height="150">
+                <h3>Mua Nhà</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, eaque!</p>
+            </div>
+            <div class="box">
+                <img src="images/i2.png" width="150" height="150">
+                <h3>Thuê Nhà</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, eaque!</p>
+            </div>
+            <div class="box">
+                <img src="images/i3.png" width="150" height="150">
+                <h3>Bán Nhà</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, eaque!</p>
+            </div>
+            <div class="box">
+                <img src="images/i4.png" width="150" height="150">
+                <h3>Căn Hộ & Tòa Nhà</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, eaque!</p>
+            </div>
+            <div class="box">
+                <img src="images/i5.png" width="150" height="150">
+                <h3>Trung Tâm Mua Sắm</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, eaque!</p>
+            </div>
+            <div class="box">
+                <img src="images/i6.png" width="150" height="150">
+                <h3>Dịch Vụ 24/7</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, eaque!</p>
+            </div>
+        </div>
+    </section>
+    <!--------------service end------------------------------->
+
+
+    <!--------------listing start------------------------------->
+
+    <section class="listings">
+        <h1 class="heading">Danh Sách Nổi Bật</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="admin">
+                    <h3>NT</h3>
+                    <div>
+                        <p>Nam Trung</p>
+                        <span>20-9-2023</span>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <p class="total-images"><i class="far fa-image"></i> <span>4</span></p>
+                    <p class="type"> <span>Căn Hộ</span> <span>Giảm Giá</span></p>
+                    <form action="" method="post" class="save">
+                        <button type="submit" name="save" class="far fa-heart"></button>
+                    </form>
+                    <img src="images/h1.jpg">
+                </div>
+                <h3 class="name">Căn Hộ Hiện Đại & Chung Cư</h3>
+                <p class="location"><i class="fa-solid fa-map-location"></i> <span> Phan Xích Long, Phú Nhuận</span></p>
+                <div class="flex">
+                    <p><i class="fas fa-bed"></i> <span>3</span></p>
+                    <p><i class="fas fa-bath"></i> <span>2</span></p>
+                    <p><i class="fas fa-maximize"></i> <span>68m2</span></p>
+                </div>
+                <a href="view-property.html" class="btn">Xem Chi Tiết</a>
+            </div>
+            <!---->
+            <div class="box">
+                <div class="admin">
+                    <h3>MLT</h3>
+                    <div>
+                        <p>Mai Lê Tân</p>
+                        <span>20-9-2023</span>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <p class="total-images"><i class="far fa-image"></i> <span>4</span></p>
+                    <p class="type"> <span> Tòa Nhà</span> <span>Giảm Giá</span></p>
+                    <form action="" method="post" class="save">
+                        <button type="submit" name="save" class="far fa-heart"></button>
+                    </form>
+                    <img src="images/h2.jpg">
+                </div>
+                <h3 class="name">Nhà Hiện Đại</h3>
+                <p class="location"><i class="fa-solid fa-map-location"></i> <span> Phường 7, Phú Nhuận</span></p>
+                <div class="flex">
+                    <p><i class="fas fa-bed"></i> <span>5</span></p>
+                    <p><i class="fas fa-bath"></i> <span>3</span></p>
+                    <p><i class="fas fa-maximize"></i> <span>160m2</span></p>
+                </div>
+                <a href="view-property.html" class="btn">Xen Chi Tiết</a>
+            </div>
+            <!---->
+            <div class="box">
+                <div class="admin">
+                    <h3>NT</h3>
+                    <div>
+                        <p>Nam Trung</p>
+                        <span>20-9-2023</span>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <p class="total-images"><i class="far fa-image"></i> <span>4</span></p>
+                    <p class="type"> <span>Nhà</span> <span>Giảm Giá</span></p>
+                    <form action="" method="post" class="save">
+                        <button type="submit" name="save" class="far fa-heart"></button>
+                    </form>
+                    <img src="images/h3.jpg">
+                </div>
+                <h3 class="name">Nhà Hiện Đại</h3>
+                <p class="location"><i class="fa-solid fa-map-location"></i> <span> Phường 7, Phú Nhuận</span></p>
+                <div class="flex">
+                    <p><i class="fas fa-bed"></i> <span>3</span></p>
+                    <p><i class="fas fa-bath"></i> <span>2</span></p>
+                    <p><i class="fas fa-maximize"></i> <span>88m2</span></p>
+                </div>
+                <a href="view-property.html" class="btn">Xem Chi Tiết</a>
+            </div>
+        </div>
+        <!----->
+        <div style="margin-top: 2rem; text-align: center;"><a href="listing.html" class="inline-btn">Xem Tất Cả</a></div>
+    </section>
+    <!--------------listing end------------------------------->
+
+
+
+
+
+    <!---------------footer start------------------------------------>
+    <footer class="footer">
+        <section class="flex">
+            <div class="box">
+                <a href="tel:123456789"><i class="fas fa-phone"></i> <span> 0916******</span></a>
+                <a href="tel:222666728"><i class="fas fa-phone"></i> <span> 0392******</span></a>
+                <a href="mail to:example@gmail.com"><i class="fas fa-envelope"></i> <span> example@gmail.com</span></a>
+                <a href="https://goo.gl/maps/pLuBjfMJfXPe7mbm7"><i class="fas fa-map"></i> <span> Quận 12, TP Hồ Chí Minh</span></a>
+            </div>
+            <!---->
+            <div class="box">
+                <a href="index.html"> <span>Trang Chủ</span> <i class="fas fa-home"></i></a>
+                <a href="about.html"> <span>Về Chúng Tôi</span> <i class="fas fa-paper-plane"></i></a>
+                <a href="contact.html"> <span>Liên Hệ Với Chúng Tôi</span> <i class="fa-solid fa-address-book"></i></a>
+                <a href="listing.html"> <span>Tất Cả Danh Sách</span> <i class="fas fa-list"></i></a>
+                <a href="view-property.html"> <span>Sao Lưu Thông Tin Tài Sản</span> <i class="fa-solid fa-box"></i></a>
+            </div>
+            <!---->
+            <div class="box">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i> <span>Facebook</span></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> <span>Twitter</span></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i> <span>Instagram</span></a>
+            </div>
+        </section>
+        <div class="credit">
+            CopyRight &copy; 2023 | All Rights Reserved
+        </div>
+    </footer>
+    <!---------------footer end------------------------------------>
+    
+    
+
+    <!--------------------------------------->
+    <script src="script.js"></script>
+</body>
+</html>
